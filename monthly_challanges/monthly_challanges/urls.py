@@ -20,3 +20,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('challange/', include("challanges.urls"))
 ]
+
+
+handler404 = "monthly_challanges.views.handle404"
